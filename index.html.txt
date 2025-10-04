@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Photobooth — Collage 6 tấm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="topbar">
+            <h1>Photobooth — Chụp 6 & Ghép Collage</h1>
+        </header>
+
+        <main class="main-grid">
+            <section class="camera-panel">
+                <div class="camera-frame">
+                    <video id="video" autoplay playsinline muted></video>
+                    <div id="flash" class="flash"></div>
+                    <div id="shotOverlay" class="overlay hidden">1 / 6</div>
+                </div>
+
+                <div class="controls">
+                    <button id="startCam" class="btn">Bật Camera</button>
+                    <button id="capture6" class="btn primary">CHỤP 6 TẤM</button>
+                    <button id="retake" class="btn" disabled>Chụp lại</button>
+                </div>
+
+                <p class="hint">Nhấn <strong>CHỤP 6 TẤM</strong> để chụp nhanh 6 tấm liên tiếp. Cho phép camera khi
+                    trình duyệt hỏi.</p>
+            </section>
+
+            <aside class="result-panel">
+                <div class="preview-area">
+                    <h3>Kết quả Collage</h3>
+                    <div class="decor-frame" id="decorFrame">
+                        <!-- nơi hiển thị ảnh collage -->
+                        <canvas id="collageCanvas"></canvas>
+                        <div id="logoOval" class="logo-oval">P O T O B O X</div>
+                        <div id="dateStamp" class="date-stamp"></div>
+                    </div>
+
+                    <div class="actions">
+                        <a id="downloadBtn" class="btn primary disabled" download="photobooth-collage.jpg">Tải xuống</a>
+                        <button id="showImg" class="btn" disabled>Xem ảnh lớn</button>
+                    </div>
+
+                    <div id="finalImgWrap" class="final-img hidden">
+                        <img id="finalImg" alt="Collage result">
+                        <button id="closeFinal" class="btn">Đóng</button>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
