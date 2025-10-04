@@ -1,0 +1,1 @@
+import{d as r}from"./app-Dovg4VZ6.js";import{e as n}from"./ant-design-vue-DOimKarp.js";const f=r("photos",()=>{const o=n([]);function t(s){o.value=s}function e(){o.value=[]}return{photos:o,setPhotos:t,clearPhotos:e}});export{f as u};

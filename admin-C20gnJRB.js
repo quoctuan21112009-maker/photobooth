@@ -1,0 +1,1 @@
+import{a2 as t,L as e,r as o,F as a,o as c}from"./ant-design-vue-DOimKarp.js";import{_ as s}from"./app-Dovg4VZ6.js";const _={};function m(p,d){const r=o("TheHeader"),n=o("router-view");return c(),t(a,null,[e(r),e(n)],64)}const l=s(_,[["render",m]]);export{l as default};
